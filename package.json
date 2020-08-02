@@ -4,10 +4,24 @@
   "main": "lib/index.js",
   "license": "MIT",
   "module": "esm/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HuiAzir/nchooks"
+  },
+  "files": [
+    "esm",
+    "lib"
+  ],
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w"
   },
+  "browserslist": [
+    "last 2 versions",
+    "Firefox ESR",
+    "> 1%",
+    "ie >= 11"
+  ],
   "devDependencies": {
     "@babel/core": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
@@ -29,5 +43,8 @@
     "tslib": "^2.0.0",
     "tslint": "^6.1.3",
     "typescript": "^3.9.7"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
