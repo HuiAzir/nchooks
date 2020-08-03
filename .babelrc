@@ -1,0 +1,13 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "loose": true,
+        "modules": false,
+        "corejs": 3
+      }
+    ]
+  ]
+}
