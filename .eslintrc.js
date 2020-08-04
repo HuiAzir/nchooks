@@ -18,6 +18,7 @@ module.exports = {
     'typescript'
   ],
   rules: {
-    'import/extensions': ['error', 'never']
+    'import/extensions': ['error', 'never'],
+    '@typescript-eslint/no-explicit-any': 'off'
   }
 }
