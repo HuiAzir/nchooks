@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import { isFunction } from './utils'
+import { isFunction } from '../utils'
 
 function useInstance<T> (initial?: T | (()=>T)): T | undefined {
   const instance = useRef<T>()
