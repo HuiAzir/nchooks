@@ -10,7 +10,7 @@
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*.ts"]
     },
     "skipLibCheck": true,
     "declaration": false,

@@ -32,6 +32,11 @@ gulp.task('esm', function () {
   return tsProject
     .src()
     .pipe(tsProject())
+    .pipe(
+      babel({
+        configFile: './.babelrc'
+      })
+    )
     .pipe(gulp.dest('esm/'))
 })
 
