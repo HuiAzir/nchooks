@@ -14,7 +14,13 @@
   ],
   "scripts": {
     "build": "NODE_ENV=production gulp",
-    "dev": "gulp -w"
+    "dev": "gulp -w",
+    "patch": "npm version patch",
+    "prepatch": "npm version prepatch",
+    "minor": "npm version minor",
+    "major": "npm version major",
+    "alpha": "npm version prerelease --preid=alpha",
+    "beta": "npm version prerelease --preid=beta"
   },
   "browserslist": [
     "last 2 versions",
