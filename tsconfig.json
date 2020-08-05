@@ -10,12 +10,12 @@
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*.ts"]
+      "@/*": ["src/*"]
     },
     "skipLibCheck": true,
     "declaration": false,
     "strictNullChecks": true
   },
   "include": ["src"],
-  "exclude": ["node_modules", "lib", "esm"]
+  "exclude": ["node_modules","src/**/__test__", "lib", "esm"]
 }
