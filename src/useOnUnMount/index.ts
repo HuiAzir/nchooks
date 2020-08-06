@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-function useOnUnMount (fn: () => void): void {
+function useOnUnmount (fn: () => void): void {
   useEffect(() => {
     return () => {
       fn()
@@ -8,4 +8,4 @@ function useOnUnMount (fn: () => void): void {
   }, [])
 }
 
-export default useOnUnMount
+export default useOnUnmount
