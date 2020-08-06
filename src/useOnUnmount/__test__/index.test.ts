@@ -1,13 +1,13 @@
 import { renderHook } from '@testing-library/react-hooks'
-import useOnUnMount from '../index'
+import useOnUnmount from '../index'
 
-describe('useOnUnMount', () => {
+describe('useOnUnmount', () => {
   it('should be defined', () => {
-    expect(useOnUnMount).toBeDefined()
+    expect(useOnUnmount).toBeDefined()
   })
-  it('test useOnUnMount', async () => {
+  it('test useOnUnmount', async () => {
     const fn = jest.fn()
-    const hook = renderHook(() => useOnUnMount(fn))
+    const hook = renderHook(() => useOnUnmount(fn))
     expect(fn).toBeCalledTimes(0)
     hook.rerender()
     expect(fn).toBeCalledTimes(0)
