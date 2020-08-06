@@ -15,6 +15,7 @@
   "scripts": {
     "build": "NODE_ENV=production gulp",
     "dev": "gulp -w",
+    "dev:test": "jest --watch",
     "test": "jest",
     "patch": "npm version patch",
     "prepatch": "npm version prepatch",
