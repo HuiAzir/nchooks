@@ -12,6 +12,12 @@
     "esm",
     "lib"
   ],
+  "keywords": [
+    "hooks",
+    "react",
+    "nchooks",
+    "react hooks"
+  ],
   "scripts": {
     "build": "NODE_ENV=production gulp",
     "dev": "gulp -w",
