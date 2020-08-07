@@ -1,13 +1,13 @@
 import { useCallback, useState, Dispatch } from 'react'
 import produce from 'immer'
 
-function useImmutable<T> (initialValue?: T | (() => T)): [ T | undefined, Dispatch<any>] {
+function useImmutable<T> (initialValue: T | (() => T)): [ T, Dispatch<any>] {
   // eslint-disable-next-line @typescript-eslint/no-empty-function
-  const [state, setState] = useState<T | undefined>(produce(initialValue, () => { }))
+  const [state, setState] = useState<T>(produce(initialValue, () => { }))
   return [
     state,
-    useCallback<Dispatch<any>>((updater:any) => {
-      setState(produce(updater))
+    useCallback<Dispatch<T>>((updater:T) => {
+      setState(produce(updater as any))
     }, [])
   ]
 }

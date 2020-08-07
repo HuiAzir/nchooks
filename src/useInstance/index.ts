@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { isFunction } from '../utils'
 
-function useInstance<T> (initial?: T | (()=>T)): T | undefined {
+function useInstance<T> (initial?: T | (()=>T)): T {
   const instance = useRef<T>()
   if (instance.current === undefined) {
     if (initial) {
