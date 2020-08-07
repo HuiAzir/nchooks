@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-function useOnMount (fn:(...args: unknown[]) => unknown):void {
+function useOnMount (fn:() => void):void {
   useEffect(() => {
     fn()
   }, [])
