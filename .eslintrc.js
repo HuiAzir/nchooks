@@ -19,6 +19,7 @@ module.exports = {
   ],
   rules: {
     'import/extensions': ['error', 'never'],
-    '@typescript-eslint/no-explicit-any': 'off'
+    '@typescript-eslint/no-explicit-any': 'off',
+    'no-undef': ['error']
   }
 }
