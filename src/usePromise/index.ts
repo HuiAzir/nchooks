@@ -24,14 +24,35 @@ export interface UsePromiseOptions {
   skipOnLoading?: boolean
 }
 
-// 👇 下面是一堆Typescript函数重载声明，为了方便Typescript推断泛型变量. 小白可以跳过
-function usePromise<T>(action: () => Promise<T>, option?: UsePromiseOptions): Res<() => Promise<T>, T>
-function usePromise<T, A>(action: (arg0: A) => Promise<T>, option?: UsePromiseOptions): Res<(arg0: A) => Promise<T>, T>
-function usePromise<T, A, B>(action: (arg0: A, arg1: B) => Promise<T>, option?: UsePromiseOptions): Res<(arg0: A, arg1: B) => Promise<T>, T>
-function usePromise<T, A, B, C>(action: (arg0: A, arg1: B, arg2: C) => Promise<T>, option?: UsePromiseOptions): Res<(arg0: A, arg1: B, arg2: C) => Promise<T>, T>
-function usePromise<T, A, B, C, D>(action: (arg0: A, arg1: B, arg2: C, arg3: D) => Promise<T>, option?: UsePromiseOptions): Res<(arg0: A, arg1: B, arg2: C, arg3: D) => Promise<T>, T>
-function usePromise(action: (...args: any[]) => Promise<any>, option?: UsePromiseOptions): Res<(...args: any) => Promise<any>, any>
-// 👆 上面是一堆Typescript函数重载声明，可以跳过
+function usePromise<T>(
+  action: () => Promise<T>,
+  option?: UsePromiseOptions
+): Res<() => Promise<T>, T>
+
+function usePromise<T, A>(
+  action: (arg0: A) => Promise<T>,
+  option?: UsePromiseOptions
+): Res<(arg0: A) => Promise<T>, T>
+
+function usePromise<T, A, B>(
+  action: (arg0: A, arg1: B) => Promise<T>,
+  option?: UsePromiseOptions
+): Res<(arg0: A, arg1: B) => Promise<T>, T>
+
+function usePromise<T, A, B, C>(
+  action: (arg0: A, arg1: B, arg2: C) => Promise<T>,
+  option?: UsePromiseOptions
+): Res<(arg0: A, arg1: B, arg2: C) => Promise<T>, T>
+
+function usePromise<T, A, B, C, D>(
+  action: (arg0: A, arg1: B, arg2: C, arg3: D) => Promise<T>,
+  option?: UsePromiseOptions
+): Res<(arg0: A, arg1: B, arg2: C, arg3: D) => Promise<T>, T>
+
+function usePromise(
+  action: (...args: any[]) => Promise<any>,
+  option?: UsePromiseOptions
+): Res<(...args: any) => Promise<any>, any>
 
 /**
  * 接受一个action，用于执行异步操作
