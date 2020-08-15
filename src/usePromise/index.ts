@@ -8,7 +8,7 @@ import useRefProps from '../useRefProps'
 import { generateUUID } from '../utils'
 // 定义usePromise的返回值
 export interface Res<T, S> {
-  loading: boolean
+  loading?: boolean
   error?: Error
   value?: S
   setValue: (v: S) => void
@@ -64,7 +64,7 @@ function usePromise (
   const actionRef = useRefProps(action)
   const optionRef = useRefProps(option)
   const [loading, setLoading, loadingRef] = useRefState(false)
-  const taskIdRef = useRef<number>()
+  const taskIdRef = useRef<string>()
   const argsRef = useRef<any[]>()
   const [value, setValue] = useState()
   const [error, setError, errorRef] = useRefState<Error | undefined>()
