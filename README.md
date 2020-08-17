@@ -56,11 +56,15 @@
   - [`useOnUpdate`](https://www.yuque.com/huiazir/nchooks/kxip04) &mdash; 组件更新时。
     <br/>
     <br/>
-
 - **存储**
   - [`useStorage`](https://www.yuque.com/huiazir/nchooks/dsomdc) &mdash; 使用localStorage或sessionStorage。
     <br/>
     <br/>
+- **数据请求**
+  - [`usePromise`](https://www.yuque.com/huiazir/nchooks/agr5qv) &mdash; 简化数据请求逻辑。
+    <br/>
+    <br/>
+
 ## Usage
 
 你需要安装React [`16.8.0`](https://reactjs.org/blog/2019/02/06/react-v16.8.0.html)或更高版本才能使用Hooks API。你可以分别导入每个钩子
