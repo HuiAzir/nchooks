@@ -62,6 +62,7 @@
     <br/>
 - **数据请求**
   - [`usePromise`](https://www.yuque.com/huiazir/nchooks/agr5qv) &mdash; 简化数据请求逻辑。
+  - [`usePromiseEffect`](https://www.yuque.com/huiazir/nchooks/ysv2yh) &mdash; 自动请求接口。
     <br/>
     <br/>
 
@@ -78,5 +79,3 @@ import useToggle from 'nchooks/lib/useToggle'
 ```js
 import {useToggle} from 'nchooks'
 ```
-
-[img-demo]: https://img.shields.io/badge/demo-%20%20%20%F0%9F%9A%80-green.svg
