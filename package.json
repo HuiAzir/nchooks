@@ -1,7 +1,7 @@
 {
   "name": "nchooks",
   "description": "NB React Hooks",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "main": "lib/index.js",
   "license": "MIT",
   "module": "esm/index.js",
