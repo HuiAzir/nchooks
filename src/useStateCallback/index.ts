@@ -11,7 +11,7 @@ const useStateCallback = (initial: any): any => {
     }
     useEffect(() => {
         isUpdate.current?.(state);
-    })
+    },[state])
     return [state, enhanceState]
 }
 
